@@ -143,7 +143,7 @@ class PaymentController extends Controller
 
         // Thiết lập Google Client (không lưu vào session)
         $client = new Google_Client();
-        $client->setAuthConfig(storage_path('app/sinuous-ally-454015-v8-a32a4f3afbba.json'));
+        $client->setAuthConfig(storage_path('app/congchien.json'));
         $client->addScope(Google_Service_Drive::DRIVE);
         $service = new Google_Service_Drive($client);
 
